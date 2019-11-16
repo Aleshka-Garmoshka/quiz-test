@@ -1,0 +1,11 @@
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.10);
+    background-color: #fcfbfb;
+    max-width: 60%;
+    margin: 10px 0px;
+    font-weight: bolder;
+}
