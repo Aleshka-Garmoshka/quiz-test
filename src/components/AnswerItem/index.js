@@ -20,10 +20,10 @@ const AnswerItem = (props)=>{
                         <img src={`/${image}`} className="rounded"/>
                     </div>
                     Ваш ответ:
-                    { typeof userAnswer =='object'?Object.keys(userAnswer).filter((an)=>userAnswer[an].join(" ")):userAnswer}
+                    { typeof userAnswer =='object'?Object.keys(userAnswer).filter((an)=>userAnswer[an]).join(','):userAnswer}
 
 
-                    <h3 className="text-of-test">Правильный ответ: {correctAnswer.join(" ")} </h3>
+                    <h3 className="text-of-test">Правильный ответ: {typeof userAnswer =='object'?correctAnswer.join(','):correctAnswer} </h3>
 
                 </div>
             </div>
